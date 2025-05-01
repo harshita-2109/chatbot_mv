@@ -7,6 +7,7 @@ import streamlit as st
 import groq
 import tempfile
 import shutil
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"  # Disable GPU usage
 
 # Phase 2 libraries
 from langchain_groq import ChatGroq
